@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 500px;
+            width: 500px;
+        }
+        .image{
+            height: 500px;
+            width: 500px;
+            position: relative;
+        }
+        .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            background-color: aqua;
+            opacity: 0.6;
+            transition: 2s all ease;
+            color: transparent;
+        }
+        .image:hover .text{
+            width: 100%;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="images/pexels-lina-kivaka-12238173.jpg" alt="">
+        <div class="text">
+            <h1>bottomoverlay</h1>
+        </div>
+    </div>
+</body>
+</html>
