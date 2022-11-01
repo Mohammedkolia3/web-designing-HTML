@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        header{
+            padding: 20px;
+            background-image: url(images/banner2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 740px;
+            position: relative;
+            background-position: center;
+        }
+        a:hover{
+            color: red;
+        }
+        span{
+            color: darkblue;
+            font-size: 30px;
+        }
+        header .headernav{
+            display: flex;
+            width: 100%;
+        }
+        header .background .headernav .logo{
+            display: flex;
+            width: 30%;
+            font-size: 25px;
+            font-weight: bolder;
+            padding: 5px;
+        }
+        header .headernav .nav{
+            width: 40%;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            font-style: italic;
+            font-size: 20px;
+            justify-content: space-around;
+            text-align: center;
+            padding: 20px;
+        }
+        .search1{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px;
+            width: 30%;
+        }
+        .button1{
+            height: 40px;
+            width: 120px;
+            background-color: blue;
+            border-radius: 10px;
+            color: black;
+        }
+        .button1:hover{
+            background-color: red;
+            color: white;
+        }
+        .text{
+            position: absolute;
+            top: 300px;
+            color: white;
+            padding-left: 210px;
+         }
+         h1{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+         }
+         h2{
+            color: white;
+            font-size: 50px;
+            padding-left: 210px;
+            font-weight: bold;
+         }
+         .p{
+            padding: 5px;
+            font-style: italic;
+            font-size: 20px;
+         }
+         .imgbar{
+            display: flex;
+            width: 100%;
+         }
+         .shoes{
+            width: 20%;
+         }
+         img{
+            height: 213px;
+            width: 305px;
+         }
+         .insta{
+            width: 20%;
+            text-align: center;
+            align-items: center;
+            width: 300px;
+            height: 213px;
+         }
+         .facebook{
+            text-align: center;
+            align-items: center;
+            width: 300px;
+            height: 213px;
+         }
+         .twitter{
+            text-align: center;
+            align-items: center;
+            width: 300px;
+            height: 213px;
+         }
+         .explore{
+            text-align: center;
+            align-items: center;
+            width: 320px;
+            height: 213px;
+            background-color: navy;
+            color: white;
+         }
+         h5{
+            color: red;
+            font-size: 20px;
+            margin-top: 90px;
+         }
+         .aboutus{
+            height: 700px;
+            width: 100%;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            display: flex;
+         }
+         .aboutus .img1 img{
+            height: 540px;
+            width: 350px;
+            border-radius: 10px;
+         }
+        .img1{
+            padding-left: 130px;
+            padding-top: 45px;
+        }
+        h4{
+            font-size: 28px;
+            color: red;
+            padding-left: 100px;
+            padding-top: 43px;
+            font-style: italic;
+            font-weight: 200;
+          }
+          .text1{
+            grid-template-rows: 1fr;
+          }
+          h3{
+            padding-left: 96px;
+            font-size: 26px;
+            padding-top: 20px;
+            line-height: 20px;
+          }
+          .span1{
+            font-size: 40px;
+            color: black;
+            grid-template-rows: 1fr 1fr;
+          }
+          .para1{
+            grid-template-columns: 1fr 1fr;
+            display: grid;
+            padding-left: 96px;
+            padding-top: 30px;
+          }
+          .p1{
+            font-size: 20px;
+            font-style: italic;
+            color: lightcoral;
+          }
+          .p2{
+            font-size: 20px;
+            font-style: italic;
+            color: lightcoral;       
+         }
+         .gridspic3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 30px;
+            padding-left: 85px;
+            padding-top: 40px;
+            text-align: center;
+         }
+        .gridspic3 .grid1 img{
+            height: 190px;
+            width: 190px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .gridspic3 .grid2 img{
+            height: 190px;
+            width: 190px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .gridspic3 .grid3 img{
+            height: 190px;
+            width: 190px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .h31{
+            text-align: center;
+            padding: 17px;
+        }
+        .p3{
+            text-align: center;
+        }
+        .mens{
+            height: 500px;
+            width: 100%;
+            background-color: azure;
+            border-radius: 20px;
+            display: flex;
+        }
+        .womens{
+            height: 500px;
+            width: 100%;
+            background-color: rgb(175, 237, 237);
+            border-radius: 20px;
+            position: relative;
+        }
+        .mens img{
+            height: 375px;
+            width: 400px;
+            border-radius: 20px;
+            margin-left: 150px;
+            margin-top: 65px;
+        }
+        .womens img{
+            height: 375px;
+            width: 400px;
+            border-radius: 20px;
+            margin-left: 150px;
+            margin-top: 65px;
+        }
+        .text2{
+            grid-template-rows: 1fr;
+            padding-left: 75px;
+            padding-top: 75px;
+        }
+        .text3{
+            grid-template-rows: 1fr;
+            padding-left: 75px;
+            padding-top: 75px;
+            position: absolute;
+            margin-left: 550px;
+        }
+        .h01{
+            color: red;
+            font-style: italic;
+            font-size: 20px;
+        }
+        .h02{
+            color: navy;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 55px;
+        }
+        .h03{
+            color: navy;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 55px;
+        }
+        .p4{
+            font-size: 20px;
+            font-style: italic;
+            color: rgb(73, 73, 73);
+            padding-top: 10px;
+        }
+        .button2{
+            background-color: red;
+            height: 40px;
+            width: 120px;
+            margin-top: 20px;
+            border-radius: 10px;
+            color: white;
+            border: red;
+        }
+        .collection1{
+            display: flex;
+        }
+        .galary{
+            height: 700px;
+            width: 100%;
+            background-color: #fff8f0;
+            border-radius: 20px;
+        }
+        .title{
+            padding: 40px;
+        }
+        .h61{
+            text-align: center;
+            font-size: 20px;
+            color: red;
+            font-style: italic;
+        }
+        .h21{
+            text-align: center;
+            color: navy;
+            padding-right: 150px;
+        }
+        ul .galaryimg{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            grid-gap: 10px;
+        }
+        .galaryimg img{
+            border-radius: 15px;
+            height: 250px;
+        }
+        .img2{
+            position: relative;
+        }
+        .img2 .texthover1 .h32{
+            text-align: center;
+            padding: 0;
+            margin-top: 100px;
+        }
+         .img2 .texthover1{
+            position: absolute;
+             top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(180, 180, 180);
+            opacity: 0.6;
+            transition: 400ms all ease;
+            color: transparent;
+            overflow: hidden;
+            transform: scale(0);
+        }
+         .img2:hover .texthover1{
+            transform: scale(1);
+            color: black;
+            border-radius: 15px;
+        }
+        .activemembers{
+            background: url(images/banner2.jpg);
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            align-items: center;
+            height: 200px;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .text4{
+            display: flex;
+            display: flex;
+            margin-left: 28px;
+            text-align: center;
+            color: white;
+            justify-content: space-around;
+        }
+        .branches{
+            text-align: left;
+            padding: 0 30px;
+        }
+        .p6{
+            font-size: 50px;
+            font-weight: 700;
+            color: #fff;
+            display: block;
+            opacity: 1;
+        }
+        .activemembers .text4 .h33{
+            padding: 20px;
+            font-size: 18px;
+            color: red;
+        }
+        .footer{
+            background-color: navy;
+            height: 500px;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .container{
+            max-width: 1300px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .rowfooter{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .a1{
+            font-size: 30px;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: inline-block;
+            line-height: 46px;
+            padding: 0;
+        }
+        .h22{
+            padding: 0;
+        }
+        .p7{
+            color: white;
+        }
+        .passionkraft{
+            margin-top: 40px;
+        }
+        .button3{
+            background-color: red;
+            height: 40px;
+            width: 120px;
+            margin-top: 20px;
+            border-radius: 10px;
+            color: white;
+            border: red;
+        }
+        .h66{
+            color: #fff;
+            font-size: 31px;
+            line-height: 28px;
+            text-transform: capitalize;
+            margin-bottom: 32px;
+            font-weight: 600;
+            margin-top: 62px;
+            margin-left: 95px
+        }
+        .quicklinks{
+            padding-left: 150px;
+        }
+        .links{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .list1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            padding-left: 10px;
+        }
+        .ul1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 25px;
+        }
+        form{
+            display: flex;
+            margin-top: 25px;
+            padding-left: 89px;
+            color: white;
+        }
+        input{
+            background-color: blue;
+            border: none;
+            padding: 15px 20px;
+            padding: 15px 20px;
+            outline: none;
+            width: 100%;
+            color: white;
+            border-radius: 0.25rem 0 0 0.25rem;
+            opacity: 1;
+        }
+        .button4{
+            text-align: center;
+            background-color:red ;
+            padding-left: 0;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 18%;
+            border-radius: 0 0.25rem 0.25rem 0;
+        }
+        .p8{
+            margin-left: 94px;
+            color: white;
+            font-size: 20px;
+            font-style: italic;
+        }
+        .keep{
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="background">
+            <div class="headernav">
+                <div class="logo">
+                    <a href=""><h1><strong>Passion</strong>Kraft</h1></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Pages</a></li>
+                    </ul>
+                </div>
+                <div class="search1">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                    <button class="button1"><a href="">Get in touch</a></button>
+                    <span class="fa-solid fa-moon"></span>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+           <h1>Mens Fashion</h1>
+           <h2>Upto 60% OFF</h2> 
+           <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quia nobis aliquid facilis voluptatum ipsum </p>
+        </div>
+    </header>    
+        <div class="imgbar">
+             <div class="shoes"><img src="images/download.jfif" alt=""></div>
+             <div class="insta"><h5 style="color: pink;">Instagram</h5></div>
+             <div class="facebook"><h5 style="color: darkblue;">Facebook</h5></div>
+             <div class="twitter"><h5 style="color: skyblue;">Twitter</h5></div>
+             <div class="explore"><h5>Explore Now</h5></div>
+       </div>
+    <section>
+        <div class="aboutus">
+            <div class="img1">
+                <img src="images/suit.jpg" alt="">
+            </div>       
+            <div class="text1">
+                <h4>About Us</h4>
+                <h3> We have 10+ years of 
+                    
+                    <span class="span1">EXPERIENCE</span>
+                </h3>
+                <div class="para1">
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur<br>. Molestiae praesentium velit enim esse <br>soluta repellendus earum deleniti,<br> dolorem aut facilis dignissimos reiciendis<br> quasi sapiente at natus.</p>
+                    <p class="p2">Lorem ipsum dolor sit amet, consectetur<br>. Quibusdam culpa itaque perspiciatis<br>. Totam, nam placeat, officia libero provident sit<br> iusto maxime voluptatum possimus et eum<br> ipsa magni quibusdam fugiat!</p>
+                </div>
+                <div class="gridspic3">
+                    <div class="grid1">
+                        <img src="images/s1.jpg" alt="">
+                        <h3 class="h31">Watches</h3>
+                        <p class="p3">Lorem ipsum dolamet<br> consetetur elitrd diam<br> eirmod tempor.
+                        </p>
+                    </div>
+                    <div class="grid2">
+                        <img src="images/s2.jpg" alt="">
+                        <h3 class="h31">Shoes</h3>
+                        <p class="p3">Lorem ipsum dolamet<br> consetetur elitrd diam<br> eirmod tempor.
+                        </p>
+                    </div>
+                    <div class="grid3">
+                        <img src="images/s3.jpg" alt="">
+                        <h3 class="h31">Cosmetics</h3>
+                        <p class="p3">Lorem ipsum dolamet<br> consetetur elitrd diam<br> eirmod tempor.
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="collection">
+            <div class="mens">
+                <div class="img2">
+                    <img src="images/about2.jpg" alt="">
+                </div>
+                <div class="text2">
+                    <h6 class="h01">Summer collection</h6>
+                    <h6 class="h02">ACCESSORIES</h6>
+                    <h6 class="h03">COLLECTION 2022</h6>
+                    <P class="p4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit<br>. Dicta similique quis, tempore at veniam voluptates <br>commodi corporis sunt voluptatem error quod, quo iure <br>sed quam dolorum magni, consectetur earum ea.</P>
+                    <button class="button2">Shop now</button>
+                </div>
+            </div>
+        </div>
+        <div class="collection1">    
+            <div class="womens">
+                <img src="images/about1.jpg" alt="">
+            </div>
+            <div class="text3">
+                <h6 class="h01">Summer collection</h6>
+                <h6 class="h02">ACCESSORIES</h6>
+                <h6 class="h03">COLLECTION 2022</h6>
+                <P class="p4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit<br>. Dicta similique quis, tempore at veniam voluptates <br>commodi corporis sunt voluptatem error quod, quo iure <br>sed quam dolorum magni, consectetur earum ea.</P>
+                <button class="button2">Shop now</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="galary">
+            <div class="subgalary">
+                <div class="title">
+                    <h6 class="h61">Galary</h6>
+                    <h2 class="h21">Portfolio Galary</h2>
+                </div>
+                <ul class="galaryimg">
+                    <li>
+                        <div class="img2">
+                            <img src="images/1.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <img src="images/s2 (1).jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <img src="images/s3.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <img src="images/3.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <img src="images/s1.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <img src="images/2.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <img src="images/6.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                        <div class="img2">
+                            <img src="images/s4.jpg" alt="">
+                            <div class="texthover1">
+                                <h3 class="h32">Passion Kraft</h3>
+                                <p class="p4">Lorem ipsum</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="activemembers">
+        <div class="text4">
+            <div class="braches">
+                <p class="p6">1200</p>
+                <h3 class="h33">Branches</h3>
+            </div>
+            <div class="events">
+                <p class="p6">1500</p>
+                <h3 class="h33">Eventss</h3>
+            </div>
+            <div class="active">
+                <p class="p6">1545</p>
+                <h3 class="h33">Active Members</h3>
+            </div>
+            <div class="happy">
+                <p class="p6">1645</p>
+                <h3 class="h33">Happy Clients</h3>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="rowfooter">
+                    <div class="passionkraft">
+                        <h2 class="h22"><a href="" class="a1">Passion Kraft</a></h2>
+                        <p class="p7">Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Porro officia, maiores <br>maxime esse mollitia sint blanditiis id hic<br>. Ducimus enim iure perferendis corrupti sit,<br> tempore facilis voluptatum vitae</p>
+                        <a href=""><button class="button3">Contact Us</button></a>
+                    </div>
+                    <div class="quicklinks">
+                        <h6 class="h66">Quick Links</h6>
+                        <div class="links">
+                            <div class="list1">
+                                <ul class="ul1">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Blogs</a></li>
+                                    <li><a href="">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="list2">
+                                <ul class="ul1">
+                                    <li><a href="">Privacy policy</a></li>
+                                    <li><a href="">Terms of use</a></li>
+                                    <li><a href="">Sales & refund</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="keep">
+                        <h6 class="h66">Keep Connected</h6>
+                        <p class="p8">Get Updates By Subscribe Our <br> Weekly Newsletter</p>
+                        <form action="">
+                            <input type="email" name="email" placeholder="enter your email" required style="color: white;">
+                            <button class="button4"><span class="fas fa-paper-plane" style="color: white;"></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
