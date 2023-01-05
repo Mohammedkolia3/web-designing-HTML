@@ -1,0 +1,181 @@
+@media (min-width: 576px) {
+    .home-image {
+        height: 188px;
+        width: 100%;
+    }
+
+    .home-image .header-nav {
+        width: 100%;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .home-image .header-nav .left-logo {
+        width: 100%;
+    }
+
+    .home-image .header-nav .middle-nav {
+        padding: 0px;
+        width: 100%;
+        display: none;
+    }
+
+    .home-image .header-nav .right-search {
+        padding-top: 15px;
+        width: 100%;
+        display: flex;
+        columns: 1fr 1fr 1fr;
+    }
+
+    .home-image .header-nav .right-search button {
+        width: 100px;
+    }
+
+    .home-header .home-image .homecontent {
+        padding: 20px;
+    }
+
+    .what-offered {
+        height: 1640px;
+    }
+
+    .what-offered .heading {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .what-offered .heading h3 {
+        color: rgb(0, 0, 42);
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+
+    .what-offered .product-design {
+        display: block;
+        text-align: center;
+    }
+
+    .what-offered .product-design .product-left p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .what-offered .product-design .product-right img {
+        height: 260px;
+        border-radius: 20px;
+        margin-left: 20px;
+        width: 300px;
+    }
+
+    .what-offered .ecom-design {
+        display: block;
+    }
+
+    .what-offered .ecom-design .ecom-left img {
+        height: 260px;
+        border-radius: 20px;
+        width: 300px;
+        margin-left: 28px;
+    }
+
+    .what-offered .ecom-design .ecom-right {
+        text-align: center;
+    }
+
+    .what-offered .ecom-design .ecom-right h2 {
+        color: rgb(0, 0, 42);
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+
+    .what-offered .ecom-design .ecom-right p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .featured-services {
+        height: 1420px;
+        width: 100%;
+    }
+
+    .featured-services .services {
+        display: block;
+    }
+
+    .featured-services .services .services-1,
+    .services-2,
+    .services-3,
+    .services-4,
+    .services-5,
+    .services-6 {
+        margin-bottom: 10px;
+        margin-left: -28px;
+    }
+
+    .our-progress {
+        height: 1100px;
+    }
+
+    .our-progress .progress {
+        display: block;
+    }
+
+    .our-progress .progress .our-progress-right img {
+        height: 350px;
+        width: 350px;
+        margin-top: 10px;
+        margin-left: -35px;
+    }
+
+    .our-progress .progress .our-progress-left {
+        text-align: center;
+    }
+
+    .our-progress .progress .our-progress-left .our-progress-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 325px;
+        margin-left: -69px;
+    }
+
+    .progress-percent {
+        margin-left: -100px;
+    }
+
+    .our-progress .progress .our-progress-left .progress-percent h3 {
+        text-align: left;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .footer-content .left-content,
+    .middle-content,
+    .right-content {
+        padding: 20px;
+    }
+
+    footer .footer-content .left-content p {
+        width: 100%;
+    }
+
+    footer .footer-content .middle-content .links {
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,123 @@
+@media(min-width: 768px) {
+    .home-image {
+        height: 250px;
+        width: 100%;
+    }
+
+    .home-image .header-nav {
+        width: 100%;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .home-image .header-nav .left-logo {
+        width: 100%;
+    }
+
+    .home-image .header-nav .middle-nav {
+        padding: 0px;
+        width: 100%;
+        display: none;
+    }
+
+    .home-image .header-nav .right-search {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        columns: 1fr 1fr 1fr;
+    }
+
+    .home-image .header-nav .right-search button {
+        width: 100px;
+    }
+
+    .home-header .home-image .homecontent {
+        padding: 20px;
+    }
+
+    .what-offered {
+        height: 1740px;
+    }
+
+    .what-offered .product-design .product-right img {
+        height: 360px;
+        border-radius: 20px;
+        margin-left: 20px;
+        width: 400px;
+    }
+
+    .what-offered .ecom-design .ecom-left img {
+        height: 360px;
+        border-radius: 20px;
+        width: 400px;
+        margin-left: 73px;
+    }
+
+    .featured-services {
+        height: 900px;
+        width: 100%;
+    }
+
+    .featured-services .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 57px;
+        margin-left: -10px;
+    }
+
+    .our-progress {
+        height: 1200px;
+    }
+
+    .our-progress .progress .our-progress-right img {
+        height: 400px;
+        width: 400px;
+        margin-top: 21px;
+        margin-left: 38px;
+    }
+
+    .our-progress .progress .our-progress-left .our-progress-text p {
+        font-size: 15px;
+        margin-bottom: 10px;
+        width: 325px;
+        margin-left: 10px;
+    }
+
+    .progress-percent {
+        margin-left: 10px;
+    }
+
+    .our-progress .progress .our-progress-right img {
+        height: 450px;
+        width: 400px;
+        border-radius: 20px;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .footer-content .left-content,
+    .middle-content,
+    .right-content {
+        padding: 20px;
+    }
+
+    footer .footer-content .left-content p {
+        width: 100%;
+    }
+
+    footer .footer-content .middle-content .links {
+        gap: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+}

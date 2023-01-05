@@ -1,0 +1,140 @@
+@media (min-width:992px) {
+    .home-image {
+        height: 150px;
+        width: 100%;
+    }
+
+    .home-image .header-nav {
+        width: 100%;
+    }
+
+    .home-image img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .home-image .header-nav .left-logo {
+        width: 32%;
+    }
+
+    .home-image .header-nav .middle-nav {
+        padding: 0px;
+        width: 60%;
+        display: block;
+        justify-content: space-around;
+    }
+
+    .home-image .header-nav .right-search {
+        padding-top: 20px;
+        width: 20%;
+        display: flex;
+        columns: 1fr 1fr 1fr;
+
+    }
+
+    .home-image .header-nav .right-search button {
+        width: 100px;
+    }
+
+    .home-header .home-image .homecontent {
+        padding: 20px;
+    }
+
+    .aboutus .about-info .about-information {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        margin-left: 30px;
+        grid-gap: 30px;
+    }
+
+    .aboutus .about-info .about-information p {
+        font-size: 15px;
+    }
+
+    #more-info {
+        height: 450px;
+        display: flex;
+        text-align: center;
+    }
+
+    #more-info .more-info-left p {
+        font-size: 15px;
+    }
+
+    #more-info .more-info-left button {
+        height: 40px;
+        width: 140px;
+    }
+
+    #more-info .more-info-right {
+        padding: 16px;
+        margin-top: 26px;
+    }
+
+    #our-team {
+        height: 500px;
+    }
+
+    #our-team .our-team-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #our-team .our-team-1 .our-team-left {
+        margin-left: 20px;
+    }
+
+    #our-team .our-team-1 .our-team-left h3 {
+        font-size: 30px;
+    }
+
+    #our-team .our-team-1 .our-team-left p {
+        margin-bottom: 50px;
+        font-size: 15px;
+    }
+
+    #our-team .our-team-right {
+        display: flex;
+        text-align: center;
+        margin-left: 13px;
+    }
+
+    #our-team .our-team-right .team-member-1 img {
+        height: 260px;
+        width: 230px;
+    }
+
+    footer {
+        padding: 0px;
+    }
+
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer .footer-content .left-content,
+    .middle-content,
+    .right-content {
+        padding: 20px;
+    }
+
+    footer .footer-content .left-content p {
+        width: 100%;
+    }
+
+    footer .footer-content .middle-content .links {
+        gap: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer .footer-content .middle-content a {
+        font-size: 15px;
+    }
+
+    footer .footer-content .middle-content li {
+        padding: 5px;
+    }
+}
