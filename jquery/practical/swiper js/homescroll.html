@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="homescroll.css">
+
+    <!-- Demo styles -->
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="home-image">
+                    <img src="images/HomeImage.jpg" alt="">
+                    <div class="container">
+                        <div class="home-content container">
+                            <p class="home-heading">Women's<br />fashion 50% off</p>
+                            <p class="sub-head">Enjoy this summer trand</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-image">
+                    <img src="images/pexels-irina-varanovich-14686142.jpg" alt="">
+                    <div class="container">
+                        <div class="home-content container">
+                            <p class="home-heading">Happy Holiday<br /> Have a great weekend</p>
+                            <p class="sub-head">Enjoy the vacation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-image">
+                    <img src="images/pexels-rahib-yaqubov-14487514.jpg" alt="">
+                    <div class="container">
+                        <div class="home-content container">
+                            <p class="home-heading">Happy Holiday<br /> Have a great weekend</p>
+                            <p class="sub-head">Enjoy the vacation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="home-image">
+                    <img src="images/pexels-irina-varanovich-14686142.jpg" alt="">
+                    <div class="container">
+                        <div class="home-content container">
+                            <p class="home-heading">Happy Holiday<br /> Have a great weekend</p>
+                            <p class="sub-head">Enjoy the vacation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

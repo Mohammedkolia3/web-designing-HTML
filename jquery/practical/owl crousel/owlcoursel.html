@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="owlcrousel.css">
+    <!-- owl main -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" />
+    <script>
+        var owl = $('.owl-carousel');
+        $owl.owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+</head>
+
+<body>
+    <div class="owl-carousel">
+        <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+        <img src="images/pexels-asad-photo-maldives-457882.jpg" alt="">
+        <img src="images/pexels-fabian-wiktor-994605.jpg" alt="">
+        <img src="images/pexels-irina-varanovich-14686142.jpg" alt="">
+        <img src="images/pexels-james-wheeler-1598073.jpg" alt="">
+        <img src="images/pexels-julius-silver-753626.jpg" alt="">
+        <img src="images/pexels-julius-silver-870711.jpg" alt="">
+        <img src="images/pexels-mike-b-145685.jpg" alt="">
+        <img src="images/pexels-pixabay-206359.jpg" alt="">
+        <img src="images/pexels-pixabay-371589.jpg" alt="">
+        <img src="images/pexels-rahib-yaqubov-14487514.jpg" alt="">
+        <img src="images/pexels-tobi-620337.jpg" alt="">
+    </div>
+    <button class="play">Play</button>
+    <button class="Stop">Stop</button>
+</body>
+
+</html>

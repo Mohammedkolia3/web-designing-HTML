@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="menubar.css">
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $headers = $(".header-nav");
+            $(window).scroll(function (event) {
+                $currentVal = $(this).scrollTop();
+                if ($currentVal > 0) {
+                    $headers.addClass("menu-fixed");
+                } else {
+                    $headers.removeClass("menu-fixed");
+                }
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div class="navi">
+            <div class="header-nav">
+                <div class="left-logo">
+                    <a href="">Passion<span>Kraft</span> </a>
+                </div>
+                <div class="middle-nav">
+                    <ul>
+                        <li><a href="" style="color: red;">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Pages</a></li>
+                    </ul>
+                </div>
+                <div class="right-search">
+                    <a href=""><span class="fa-solid fa-magnifying-glass"></span></a>
+                    <a href=""><button>Get in Touch</button></a>
+                    <a href=""><span class="fa-solid fa-moon"></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home-header">
+        <div class="home-image">
+            <img src="images/HomeImage.jpg" alt="">
+            <div class="container">
+                <div class="home-content container">
+                    <p class="home-heading">Women's<br />fashion 50% off</p>
+                    <p class="sub-head">Enjoy this summer trand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section1">
+        <img src="images/pexels-irina-varanovich-14686142.jpg" alt="">
+        <img src="images/pexels-rahib-yaqubov-14487514.jpg" alt="">
+    </section>
+
+</body>
+
+</html>

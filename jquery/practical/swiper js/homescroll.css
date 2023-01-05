@@ -1,0 +1,62 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.home-header {
+    height: 800px;
+}
+
+.container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.home-image img {
+    filter: brightness(65%);
+    height: 800px;
+    width: 100%;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+}
+
+.swiper .swiper-slide .home-image .home-content {
+    position: relative;
+    top: 300px;
+    color: white;
+}
+
+.swiper .swiper-slide .home-image .home-content p {
+    font-size: 0.5in;
+}
+
+.swiper .swiper-slide .home-image .home-content .sub-head {
+    font-size: 0.3in;
+}
